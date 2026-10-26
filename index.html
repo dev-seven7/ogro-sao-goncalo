@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ogro São Gonçalo · Plano de inauguração</title>
+<meta name="description" content="Plano de inauguração da Ogro Steaks em São Gonçalo, unidade só delivery: método, alavancas, brindes, conteúdo, tráfego e cronograma.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#141312">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Permanent+Marker&display=swap">
+<style>
+:root{
+  --bg:#141312;
+  --bg-2:#1c1a18;
+  --bg-3:#25221f;
+  --paper:#ebe8e5;
+  --paper-2:#d9d3cc;
+  --ink:#1a1a1a;
+  --txt:#ebe8e5;
+  --txt-2:#c8c0b8;
+  --txt-3:#a29486;
+  --red:#b22222;
+  --red-hot:#d63030;
+  --red-deep:#8b1a1a;
+  --kraft:#c4a46c;
+  --line:rgba(235,232,229,.13);
+  --line-2:rgba(235,232,229,.07);
+  --display:"Anton","Impact","Arial Narrow",sans-serif;
+  --sans:"Archivo",system-ui,sans-serif;
+  --hand:"Permanent Marker","Comic Sans MS",cursive;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+strong{font-weight:700;color:#fff}
+a{color:inherit}
+
+/* grão de filme */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.075;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+@media (min-width:700px){.wrap{padding:0 32px}}
+
+/* ---------- TOPO ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(20,19,18,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:16px}
+.top img{height:26px;width:auto}
+.top nav{display:none;gap:22px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.top nav a{text-decoration:none;color:var(--txt-3);transition:color .2s}
+.top nav a:hover{color:var(--txt)}
+@media (min-width:960px){.top nav{display:flex}}
+.top .date{font-family:var(--display);font-size:15px;letter-spacing:.06em;color:var(--red-hot)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;min-height:min(calc(100svh - 58px),860px);display:flex;align-items:center;padding:70px 0 120px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;
+  background:
+    radial-gradient(60% 50% at 12% -8%,rgba(255,244,220,.20),transparent 60%),
+    radial-gradient(55% 45% at 92% -6%,rgba(255,244,220,.16),transparent 60%),
+    radial-gradient(70% 60% at 70% 110%,rgba(178,34,34,.45),transparent 65%),
+    var(--bg)}
+.beam{position:absolute;top:-30%;width:26%;height:150%;z-index:-1;filter:blur(18px);opacity:.55;
+  background:linear-gradient(180deg,rgba(255,246,226,.30),rgba(255,246,226,0) 70%)}
+.beam.b1{left:2%;transform:rotate(-24deg)}
+.beam.b2{left:16%;transform:rotate(-14deg);opacity:.3}
+.beam.b3{right:4%;transform:rotate(22deg)}
+.beam.b4{right:20%;transform:rotate(12deg);opacity:.28}
+.hero .wrap{display:grid;gap:44px;align-items:center;width:100%}
+@media (min-width:980px){.hero .wrap{grid-template-columns:1.25fr .75fr}}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--kraft);margin-bottom:22px}
+.kicker::before{content:"";width:28px;height:2px;background:var(--red-hot)}
+.hero h1{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.005em;font-size:clamp(58px,13vw,156px)}
+.hero h1 .r{color:var(--red-hot)}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--paper)}
+.hero .sub{margin-top:26px;font-size:clamp(16px,1.8vw,19px);color:var(--txt-2);max-width:44ch}
+.hero .sub b{color:#fff}
+.hero .meta{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--line);border-radius:40px;padding:8px 16px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-2);background:rgba(255,255,255,.02)}
+.chip b{color:var(--kraft);font-weight:700}
+
+/* número de peito */
+.bibzone{position:relative;justify-self:center;width:min(100%,380px)}
+.bib{position:relative;background:var(--paper);color:var(--ink);border-radius:10px;padding:26px 26px 22px;transform:rotate(3deg);
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.8),0 0 0 1px rgba(0,0,0,.05) inset}
+.bib .pin{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--bg);box-shadow:inset 0 1px 2px rgba(0,0,0,.6)}
+.bib .p1{top:12px;left:12px}.bib .p2{top:12px;right:12px}.bib .p3{bottom:12px;left:12px}.bib .p4{bottom:12px;right:12px}
+.bib .bt{display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid var(--ink);padding-bottom:10px}
+.bib .bt span{font-family:var(--display);font-size:16px;letter-spacing:.08em;text-transform:uppercase}
+.bib .bt .red{color:var(--red)}
+.bib .bn{font-family:var(--display);font-size:clamp(96px,22vw,138px);line-height:1;letter-spacing:-.01em;text-align:center;margin:12px 0 6px}
+.bib .bn small{color:var(--red);font-size:.5em;vertical-align:.6em;margin-left:2px}
+.bib .bb{display:flex;justify-content:space-between;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;border-top:3px solid var(--ink);padding-top:10px}
+.bib .bar{height:26px;margin-top:12px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 7px,transparent 7px 9px,var(--ink) 9px 10px,transparent 10px 14px)}
+.bibphoto{position:absolute;width:56%;right:-10%;bottom:-22%;border-radius:8px;overflow:hidden;transform:rotate(-6deg);border:6px solid var(--paper);box-shadow:0 30px 60px -20px rgba(0,0,0,.85)}
+.bibphoto img{aspect-ratio:4/5;object-fit:cover;width:100%}
+@media (max-width:979px){.bibzone{margin-bottom:60px}.bibphoto{right:-4%}}
+
+.hand{font-family:var(--hand);color:var(--kraft);font-size:clamp(18px,2.2vw,22px);line-height:1.3}
+.bibzone .hand{position:absolute;left:-6%;bottom:-30%;max-width:15ch;transform:rotate(-5deg)}
+@media (max-width:979px){.bibzone .hand{position:static;margin-top:56px;max-width:none;transform:rotate(-2deg)}}
+
+/* fita */
+.tape{position:absolute;left:-5%;right:-5%;bottom:34px;background:var(--red);transform:rotate(-2deg);overflow:hidden;border-top:2px solid var(--red-deep);border-bottom:2px solid var(--red-deep);box-shadow:0 10px 30px -10px rgba(0,0,0,.7)}
+.tape .run{display:flex;width:max-content;animation:run 38s linear infinite}
+.tape span{font-family:var(--display);font-size:20px;letter-spacing:.08em;text-transform:uppercase;padding:9px 0;white-space:nowrap;color:#fff}
+.tape span i{font-style:normal;color:var(--ink);margin:0 18px}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* ---------- SEÇÕES ---------- */
+section.s{padding:96px 0;position:relative}
+@media (max-width:700px){section.s{padding:72px 0}}
+section.s.alt{background:var(--bg-2)}
+section.s.light{background:var(--paper);color:var(--ink)}
+section.s.light strong{color:var(--ink)}
+.sh{display:grid;gap:6px;margin-bottom:46px}
+.sh .n{font-family:var(--display);font-size:clamp(64px,10vw,120px);line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--red-hot);opacity:.9}
+.light .sh .n{-webkit-text-stroke-color:var(--red)}
+.sh .ey{font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--kraft);margin-top:14px}
+.light .sh .ey{color:var(--red)}
+.sh h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(36px,6vw,72px);line-height:.96;letter-spacing:.005em;max-width:16ch}
+.sh h2 .r{color:var(--red-hot)}
+.light .sh h2 .r{color:var(--red)}
+.lead{font-size:clamp(17px,1.9vw,20px);color:var(--txt-2);max-width:60ch;margin-top:14px}
+.light .lead{color:#4e453c}
+
+/* KPIs placar */
+.board{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:28px;background:var(--bg-3)}
+@media (min-width:860px){.board{grid-template-columns:repeat(5,1fr)}}
+.board div{padding:24px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.board div:last-child{grid-column:1/-1}
+@media (min-width:860px){.board div{border-bottom:0}.board div:last-child{grid-column:auto;border-right:0}}
+.board b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(30px,3.6vw,46px);line-height:1;color:#fff;letter-spacing:.01em}
+.board b em{font-style:normal;color:var(--red-hot)}
+.board span{display:block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--txt-3)}
+
+.cards{display:grid;gap:14px}
+@media (min-width:760px){.cards.c2{grid-template-columns:1fr 1fr}.cards.c3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--bg-3);border:1px solid var(--line-2);border-radius:6px;padding:26px 24px;position:relative}
+.alt .card{background:#24211e}
+.card h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:24px;letter-spacing:.02em;line-height:1.05;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.card h3 .ic{flex:none;width:34px;height:34px;border-radius:50%;background:var(--red);display:grid;place-items:center}
+.card h3 .ic svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card ul{list-style:none;display:grid;gap:10px;font-size:15px;color:var(--txt-2)}
+.card li{padding-left:20px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:2px;background:var(--red-hot)}
+.card.k{border-top:3px solid var(--kraft)}
+.card.r{border-top:3px solid var(--red-hot)}
+.card.ghost{background:transparent;border:1px dashed var(--line)}
+.card.ghost h3{color:var(--txt-3)}
+.card.ghost li::before{background:var(--txt-3)}
+
+/* formatos */
+.fmt{display:grid;gap:16px}
+@media (min-width:880px){.fmt{grid-template-columns:1.1fr .9fr}}
+.f1{background:var(--red);color:#fff;border-radius:8px;padding:34px 30px;position:relative;overflow:hidden}
+.f1::after{content:"";position:absolute;right:-60px;bottom:-60px;width:240px;height:240px;border-radius:50%;border:40px solid rgba(0,0,0,.12)}
+.f1 .lbl,.f2 .lbl{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;opacity:.85}
+.f1 h3,.f2 h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(38px,5vw,58px);line-height:.95;margin:10px 0 18px}
+.f1 p{font-size:16px;max-width:46ch;margin-bottom:14px;position:relative;z-index:1}
+.f1 strong{color:#fff;background:rgba(0,0,0,.18);padding:0 4px;border-radius:2px}
+.f1 .mini{font-size:14px;opacity:.85}
+.stamp{position:absolute;top:22px;right:22px;z-index:2;font-family:var(--display);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#fff;border:2.5px solid #fff;border-radius:4px;padding:6px 10px;transform:rotate(7deg);line-height:1.1;text-align:center}
+@media (max-width:520px){.stamp{position:static;display:inline-block;margin-bottom:14px;transform:rotate(-3deg)}}
+.f2{background:var(--bg-3);border:1px solid var(--line);border-radius:8px;padding:34px 30px}
+.f2 .lbl{color:var(--txt-3)}
+.f2 p{color:var(--txt-2);font-size:15px;margin-bottom:18px}
+.cotas{list-style:none;border-top:1px solid var(--line)}
+.cotas li{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.cotas span{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--txt-2)}
+.cotas b{font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.02em;color:#fff}
+.cotas li.sold b{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--red-hot);text-transform:uppercase}
+.callout{margin-top:30px;display:grid;gap:20px;align-items:center}
+@media (min-width:800px){.callout{grid-template-columns:auto 1fr}}
+.callout .hand{transform:rotate(-2deg);max-width:36ch}
+.arrow{width:70px;height:auto;stroke:var(--kraft);fill:none;stroke-width:2.4;stroke-linecap:round;display:none}
+@media (min-width:800px){.arrow{display:block}}
+
+/* foto faixa */
+.photo-band{display:grid;grid-template-columns:repeat(3,1fr);gap:0;height:clamp(180px,28vw,340px)}
+.photo-band img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.05)}
+
+/* entrega */
+.ops{display:grid;gap:16px}
+@media (min-width:860px){.ops{grid-template-columns:1fr 1fr}}
+.op{border-radius:8px;padding:30px 28px;background:#fff;border:1px solid #d9d3cc}
+.op .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#fff;background:var(--ink);padding:5px 10px;border-radius:3px;margin-bottom:14px}
+.op.red .tag{background:var(--red)}
+.op h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:32px;line-height:1;margin-bottom:6px}
+.op .big{font-family:var(--display);font-size:64px;line-height:1;color:var(--red);margin:14px 0 2px}
+.op .bigl{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#847566;margin-bottom:18px}
+.op ul{list-style:none;display:grid;gap:9px;font-size:15px;color:#4e453c}
+.op li{padding-left:20px;position:relative}
+.op li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:2px;background:var(--red)}
+.need{margin-top:34px}
+.need h4{font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{font-size:13px;font-weight:600;border:1.5px solid var(--ink);border-radius:40px;padding:7px 15px}
+.light .hand{color:var(--red);margin-top:30px;transform:rotate(-1.5deg);max-width:40ch}
+
+/* brindes */
+.gift{display:grid;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:22px;background:var(--bg-3)}
+@media (min-width:900px){.gift{grid-template-columns:280px 1fr}}
+.gift .gh{padding:28px 26px;background:var(--bg);border-bottom:1px solid var(--line)}
+@media (min-width:900px){.gift .gh{border-bottom:0;border-right:1px solid var(--line)}}
+.gift .gh .ey{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--red-hot)}
+.gift .gh h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:34px;line-height:1;margin:10px 0 12px}
+.gift .gh p{font-size:14.5px;color:var(--txt-3)}
+.opts{display:grid}
+@media (min-width:700px){.opts{grid-template-columns:repeat(3,1fr)}}
+.opt{padding:24px 22px;border-bottom:1px solid var(--line);position:relative}
+@media (min-width:700px){.opt{border-bottom:0;border-right:1px solid var(--line)}.opt:last-child{border-right:0}}
+.opt:last-child{border-bottom:0}
+.opt .on{font-family:var(--display);font-size:15px;color:var(--txt-3);letter-spacing:.06em}
+.opt h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:23px;line-height:1.05;margin:6px 0 10px}
+.opt p{font-size:14.5px;color:var(--txt-2);margin-bottom:10px}
+.opt .why{font-size:13px;color:var(--kraft);font-weight:600}
+.opt.pick{background:linear-gradient(180deg,rgba(178,34,34,.22),rgba(178,34,34,.06))}
+.opt.pick .on{color:var(--red-hot)}
+.badge{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;background:var(--red-hot);color:#fff;padding:4px 8px;border-radius:3px;margin-left:8px;vertical-align:2px}
+
+/* ativações */
+.acts{display:grid;gap:14px}
+@media (min-width:860px){.acts{grid-template-columns:repeat(2,1fr)}}
+.act{position:relative;border-radius:8px;overflow:hidden;background:var(--bg-3);border:1px solid var(--line-2);padding:28px 26px}
+.act .where{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--kraft);margin-bottom:16px}
+.act dl{display:grid;gap:16px}
+.act dt{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:21px;line-height:1.1;color:#fff}
+.act dd{font-size:14.5px;color:var(--txt-2);margin-top:4px}
+.act.star{background:linear-gradient(140deg,#2a1513,#1c1a18 60%);border-color:rgba(214,48,48,.35)}
+.act.photo{padding:0;display:grid;min-height:320px}
+.act.photo img{width:100%;height:100%;object-fit:cover;grid-area:1/1}
+.act.photo .ov{grid-area:1/1;align-self:end;padding:26px;background:linear-gradient(180deg,transparent,rgba(10,9,8,.92) 55%)}
+
+/* brindes 4 */
+.gifts{display:grid;gap:14px}
+@media (min-width:760px){.gifts{grid-template-columns:1fr 1fr}}
+.gcard{position:relative;background:var(--bg-3);border:1px solid var(--line-2);border-top:3px solid var(--red-hot);border-radius:8px;padding:28px 26px 26px 26px;overflow:hidden}
+.gcard .gn{position:absolute;right:18px;top:6px;font-family:var(--display);font-size:72px;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(214,48,48,.45)}
+.gcard h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(24px,2.6vw,30px);line-height:1.05;margin:0 70px 12px 0}
+.gcard h4 em{font-style:normal;color:var(--kraft)}
+.gcard p{font-size:15.5px;color:var(--txt-2);max-width:46ch}
+.acts.one{grid-template-columns:1fr}
+.acts.one dl{grid-template-columns:1fr}
+@media (min-width:860px){.acts.one dl{grid-template-columns:1fr 1fr;column-gap:40px}}
+/* pacote */
+.pack{background:var(--red);position:relative;overflow:hidden}
+.pack::before{content:"OGRO";position:absolute;right:-2%;bottom:-12%;font-family:var(--display);font-size:clamp(200px,34vw,460px);line-height:1;color:rgba(0,0,0,.1);pointer-events:none}
+.pack .sh .n{-webkit-text-stroke-color:#fff;opacity:.55}
+.pack .sh .ey{color:#fff;opacity:.85}
+.pack .lead{color:rgba(255,255,255,.88)}
+.plist{list-style:none;display:grid;gap:0;position:relative;z-index:1;border-top:2px solid rgba(0,0,0,.25)}
+@media (min-width:860px){.plist{grid-template-columns:1fr 1fr;column-gap:48px}}
+.plist li{display:flex;gap:20px;align-items:baseline;padding:20px 0;border-bottom:2px solid rgba(0,0,0,.18)}
+.plist .pn{font-family:var(--display);font-size:46px;line-height:.9;color:var(--ink);flex:none;width:62px}
+.plist b{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(21px,2.4vw,27px);line-height:1.05;color:#fff}
+.plist span{display:block;font-size:14.5px;color:rgba(255,255,255,.85);margin-top:5px}
+
+/* percurso */
+.course{position:relative;display:grid;gap:14px;margin-top:10px}
+@media (min-width:1000px){.course{grid-template-columns:repeat(5,1fr);gap:12px;padding-top:44px}
+  .course::before{content:"";position:absolute;top:13px;left:2%;right:2%;border-top:3px dashed rgba(235,232,229,.25)}}
+.km{position:relative;background:var(--bg-3);border:1px solid var(--line-2);border-radius:8px;padding:22px 20px}
+.km .dot{display:none}
+@media (min-width:1000px){.km .dot{display:block;position:absolute;top:-42px;left:20px;width:22px;height:22px;border-radius:50%;background:var(--bg);border:3px solid var(--kraft)}}
+.km .kml{font-size:11px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--txt-3)}
+.km .kmd{font-family:var(--display);font-size:22px;color:var(--kraft);letter-spacing:.03em;margin-top:2px}
+.km h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:30px;line-height:1;margin:8px 0 14px}
+.km ul{list-style:none;display:grid;gap:8px;font-size:14px;color:var(--txt-2)}
+.km li{padding-left:16px;position:relative}
+.km li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:2px;background:var(--red-hot)}
+.km.finish{background:var(--paper);color:var(--ink);border:0;
+  background-image:linear-gradient(45deg,rgba(26,26,26,.9) 25%,transparent 25%,transparent 75%,rgba(26,26,26,.9) 75%),linear-gradient(45deg,rgba(26,26,26,.9) 25%,transparent 25%,transparent 75%,rgba(26,26,26,.9) 75%);
+  background-size:14px 14px;background-position:0 0,7px 7px;background-repeat:repeat-x;background-color:var(--paper);padding-top:34px}
+.km.finish .kml{color:#847566}
+.km.finish .kmd{color:var(--red)}
+.km.finish ul{color:#4e453c}
+.km.finish li::before{background:var(--red)}
+@media (min-width:1000px){.km.finish .dot{border-color:var(--red-hot);background:var(--red-hot)}}
+
+.confirm{margin-top:46px;display:grid;gap:12px}
+@media (min-width:800px){.confirm{grid-template-columns:1fr 1fr}}
+.confirm h4{grid-column:1/-1;font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--kraft);margin-bottom:4px}
+.cq{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.cq .bx{flex:none;width:20px;height:20px;border:2px solid var(--txt-3);border-radius:3px;margin-top:3px}
+.cq b{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:19px;letter-spacing:.02em}
+.cq p{font-size:14.5px;color:var(--txt-2);margin-top:3px}
+
+/* decisões */
+.dec{display:grid;gap:12px}
+@media (min-width:800px){.dec{grid-template-columns:1fr 1fr}}
+.d{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid #d9d3cc;border-radius:8px;padding:20px 22px}
+.d .dn{flex:none;width:52px;height:52px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:24px}
+.d p{font-size:16px;line-height:1.45;color:#2e2a26}
+.d p strong{color:var(--ink)}
+
+/* fim */
+.end{position:relative;min-height:min(78svh,720px);display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate;padding:90px 0}
+.end .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.end::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 70% at 50% 50%,rgba(20,19,18,.55),rgba(20,19,18,.92))}
+.end h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(46px,9vw,118px);line-height:.92}
+.end h2 .r{color:var(--red-hot)}
+.end .hand{margin-top:22px}
+.end .logo{width:min(260px,60%);margin:42px auto 0}
+footer{border-top:1px solid var(--line-2);padding:28px 0 36px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt-3);text-align:center;line-height:1.9}
+
+/* entrada suave */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+.photo-band + section.s{padding-top:110px}
+.hero .sub{margin-top:44px}
+/* ---------- SG · comanda ---------- */
+.receipt{position:relative;background:#f4f1ec;color:var(--ink);width:min(100%,330px);padding:26px 24px 30px;transform:rotate(-3deg);font-family:"Courier New",ui-monospace,monospace;font-size:13.5px;line-height:1.5;
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.85);
+  -webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 10px) no-repeat,radial-gradient(circle 6px at 8px 100%,transparent 6px,#000 6.5px) bottom/16px 10px repeat-x;
+  mask:linear-gradient(#000,#000) top/100% calc(100% - 10px) no-repeat,radial-gradient(circle 6px at 8px 100%,transparent 6px,#000 6.5px) bottom/16px 10px repeat-x}
+.receipt .rh{text-align:center;border-bottom:1.5px dashed #847566;padding-bottom:12px;margin-bottom:12px}
+.receipt .rh img{height:22px;margin:0 auto 8px;filter:invert(1) brightness(.2)}
+.receipt .rh b{display:block;font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:.04em;text-transform:uppercase}
+.receipt .row{display:flex;justify-content:space-between;gap:12px}
+.receipt .row span:last-child{text-align:right}
+.receipt .tot{border-top:1.5px dashed #847566;margin-top:12px;padding-top:12px;font-weight:700}
+.receipt .big{font-family:var(--display);font-size:34px;line-height:1;text-align:center;color:var(--red);margin:14px 0 4px;letter-spacing:.01em}
+.receipt .ok{text-align:center;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase}
+.rzone{position:relative;justify-self:center;width:min(100%,400px)}
+.rzone .bibphoto{right:-12%;bottom:-30%;width:44%}
+.rzone .hand{position:absolute;left:-4%;bottom:-34%;max-width:16ch;transform:rotate(-4deg)}
+@media (max-width:979px){.rzone{margin-bottom:60px}.rzone .hand{position:static;margin-top:60px;max-width:none;transform:rotate(-2deg)}}
+
+/* barreiras */
+.barr{display:grid;gap:14px}
+@media (min-width:860px){.barr{grid-template-columns:repeat(3,1fr)}}
+.bar3{background:var(--bg-3);border:1px solid var(--line-2);border-radius:8px;padding:28px 26px;position:relative;overflow:hidden}
+.bar3 .bn{font-family:var(--display);font-size:90px;line-height:.8;color:transparent;-webkit-text-stroke:1.5px rgba(214,48,48,.5);position:absolute;right:16px;top:14px}
+.bar3 .bk{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--kraft)}
+.bar3 h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:30px;line-height:1;margin:10px 70px 12px 0}
+.bar3 p{font-size:15px;color:var(--txt-2)}
+
+/* provas */
+.proof{display:grid;gap:14px;margin-top:22px}
+@media (min-width:860px){.proof{grid-template-columns:1fr 1fr}}
+.pf{border-radius:8px;padding:28px 26px;border:1px solid var(--line)}
+.pf .pk{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--txt-3)}
+.pf h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:28px;line-height:1;margin:8px 0 16px}
+.pf .nums{display:flex;flex-wrap:wrap;gap:22px 34px;margin-bottom:14px}
+.pf .nums b{display:block;font-family:var(--display);font-weight:400;font-size:40px;line-height:1;color:var(--red-hot)}
+.pf .nums span{display:block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--txt-3);margin-top:6px}
+.pf p{font-size:14.5px;color:var(--txt-2)}
+
+/* 4 fases */
+.phase4{display:grid;gap:12px;margin-top:40px}
+@media (min-width:900px){.phase4{grid-template-columns:repeat(4,1fr)}}
+.p4{border-top:3px solid var(--red-hot);background:var(--bg-3);border-radius:0 0 8px 8px;padding:22px 20px}
+.p4 .pn{font-family:var(--display);font-size:34px;line-height:1;color:var(--red-hot)}
+.p4 h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:22px;line-height:1.05;margin:6px 0 12px}
+.p4 ul{list-style:none;display:grid;gap:7px;font-size:14px;color:var(--txt-2)}
+.p4 li{padding-left:15px;position:relative}
+.p4 li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:2px;background:var(--kraft)}
+
+/* regras da casa */
+.rules{display:grid;gap:10px;margin-top:40px}
+@media (min-width:800px){.rules{grid-template-columns:1fr 1fr}}
+.rule{display:flex;gap:16px;align-items:flex-start;border:1px dashed var(--line);border-radius:6px;padding:16px 18px}
+.rule b{flex:none;font-family:var(--display);font-weight:400;font-size:24px;color:var(--kraft);line-height:1;width:30px}
+.rule p{font-size:14.5px;color:var(--txt-2)}
+.rule p strong{color:#fff}
+.subh{font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--kraft);margin:46px 0 4px}
+
+/* unidade */
+.unit{display:grid;gap:14px}
+@media (min-width:860px){.unit{grid-template-columns:1.1fr .9fr}}
+.facts{background:#fff;border:1px solid #d9d3cc;border-radius:8px;overflow:hidden}
+.facts .fr{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 22px;border-bottom:1px solid #e6e1db;font-size:15px;color:#4e453c}
+.facts .fr:last-child{border-bottom:0}
+.facts .fr span{font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--red);padding-top:3px}
+.facts .fr strong{color:var(--ink)}
+@media (max-width:520px){.facts .fr{grid-template-columns:1fr;gap:4px}}
+.unitph{border-radius:8px;overflow:hidden;position:relative;min-height:320px}
+.unitph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.unitph .lab{position:absolute;left:18px;bottom:18px;background:var(--red);color:#fff;font-family:var(--display);font-size:22px;text-transform:uppercase;padding:6px 14px;transform:rotate(-2deg)}
+
+/* alavancas */
+.levers{display:grid;gap:14px}
+@media (min-width:760px){.levers{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.levers{grid-template-columns:repeat(3,1fr)}}
+.lv{background:var(--bg-3);border:1px solid var(--line-2);border-radius:8px;padding:26px 24px;display:flex;flex-direction:column}
+.lv .le{font-size:30px;line-height:1;margin-bottom:14px}
+.lv h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.05;margin-bottom:10px}
+.lv p{font-size:14.5px;color:var(--txt-2);margin-bottom:12px}
+.lv .st{margin-top:auto;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--kraft)}
+.lv .st.go{color:#7fbf7f}
+.lv.hl{background:linear-gradient(150deg,#2c1513,#1c1a18 65%);border-color:rgba(214,48,48,.35)}
+
+/* brindes SG */
+.gtier{margin-bottom:34px}
+.gtier .gt{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:16px}
+.gtier .gt h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(26px,3vw,34px);line-height:1}
+.gtier .gt span{font-size:13.5px;color:var(--txt-3)}
+.gl{display:grid;gap:12px}
+@media (min-width:760px){.gl{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.gl{grid-template-columns:repeat(3,1fr)}}
+.gi{position:relative;background:var(--bg-3);border:1px solid var(--line-2);border-radius:8px;padding:22px 22px 20px}
+.gi h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:22px;line-height:1.05;margin-bottom:8px;padding-right:20px}
+.gi h4 em{font-style:normal;color:var(--kraft)}
+.gi p{font-size:14.5px;color:var(--txt-2)}
+.gi .tg{display:inline-block;margin-top:12px;font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;padding:4px 8px;border-radius:3px;border:1px solid var(--line);color:var(--txt-3)}
+.gi .tg.ok{border-color:rgba(196,164,108,.6);color:var(--kraft)}
+.gi .tg.new{background:var(--red-hot);border-color:var(--red-hot);color:#fff}
+
+/* conteúdo fases */
+.cphases{display:grid;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.cp{display:grid;gap:6px 24px;padding:20px 22px;border-bottom:1px solid var(--line);align-items:baseline}
+.cp:last-child{border-bottom:0}
+@media (min-width:860px){.cp{grid-template-columns:150px 220px 1fr}}
+.cp .cw{font-family:var(--display);font-size:20px;color:var(--red-hot);letter-spacing:.02em}
+.cp .cn{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:22px;line-height:1.05}
+.cp p{font-size:14.5px;color:var(--txt-2)}
+.cp.hot{background:linear-gradient(90deg,rgba(178,34,34,.22),rgba(178,34,34,.04))}
+.crea{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.crea div{background:var(--bg-3);border-radius:8px;padding:20px 18px;border-bottom:3px solid var(--kraft)}
+.crea b{display:block;font-family:var(--display);font-weight:400;font-size:44px;line-height:1;color:#fff}
+.crea span{display:block;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--kraft);margin-top:6px}
+.crea p{font-size:13.5px;color:var(--txt-2);margin-top:8px}
+@media (max-width:640px){.crea{grid-template-columns:1fr}}
+
+/* tráfego */
+.months{display:grid;gap:14px}
+@media (min-width:860px){.months{grid-template-columns:repeat(3,1fr)}}
+.mo{background:#fff;border:1px solid #d9d3cc;border-radius:8px;padding:26px 24px;position:relative}
+.mo .mk{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#847566}
+.mo h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:34px;line-height:1;margin:6px 0 12px;color:var(--ink)}
+.mo p{font-size:15px;color:#4e453c}
+.mo .bar{height:8px;border-radius:4px;background:#ebe8e5;margin-top:18px;overflow:hidden}
+.mo .bar i{display:block;height:100%;background:var(--red)}
+.trules{list-style:none;display:grid;gap:10px;margin-top:28px}
+@media (min-width:800px){.trules{grid-template-columns:1fr 1fr}}
+.trules li{padding:14px 18px 14px 44px;position:relative;background:#fff;border:1px solid #d9d3cc;border-radius:6px;font-size:15px;color:#4e453c}
+.trules li::before{content:"✕";position:absolute;left:18px;top:13px;font-family:var(--display);color:var(--red)}
+.trules li strong{color:var(--ink)}
+
+/* quem faz */
+.team{display:grid;gap:12px}
+@media (min-width:760px){.team{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.team{grid-template-columns:repeat(3,1fr)}}
+.tm{border:1px solid var(--line);border-radius:8px;padding:20px 22px}
+.tm .tw2{font-size:11.5px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--kraft)}
+.tm h4{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:22px;line-height:1.05;margin:6px 0 8px}
+.tm p{font-size:14.5px;color:var(--txt-2)}
+
+.course.c6{grid-template-columns:none}
+@media (min-width:1000px){.course.c6{grid-template-columns:repeat(6,1fr)}}
+.km h4{font-size:26px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <img src="img/ogro-negativo.svg" alt="Ogro Steaks">
+    <nav>
+      <a href="#metodo">O método</a><a href="#unidade">A unidade</a><a href="#alavancas">Alavancas</a><a href="#brindes">Brindes</a><a href="#conteudo">Conteúdo</a><a href="#trafego">Tráfego</a><a href="#cronograma">Cronograma</a>
+    </nav>
+    <span class="date">06.11 · São Gonçalo</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <i class="beam b1"></i><i class="beam b3"></i>
+  <div class="wrap">
+    <div>
+      <div class="kicker">Plano de inauguração</div>
+      <h1>A Ogro<br><span class="o">chegou em</span><br><span class="r">São Gonçalo</span></h1>
+      <p class="sub">Uma unidade <b>100% delivery</b> e o mesmo método que já abriu a Lapa e Araruama: fazer a cidade saber, tirar o cliente da inércia do primeiro pedido e transformar isso em hábito.</p>
+      <div class="meta">
+        <span class="chip"><b>03.11</b> operação</span>
+        <span class="chip"><b>06.11</b> inauguração</span>
+        <span class="chip">Só <b>delivery</b></span>
+      </div>
+    </div>
+    <div class="rzone">
+      <div class="receipt" aria-hidden="true">
+        <div class="rh"><img src="img/ogro-negativo.svg" alt=""><b>São Gonçalo</b>pedido nº 0001</div>
+        <div class="row"><span>1x McManis</span><span>✓</span></div>
+        <div class="row"><span>1x Batata</span><span>✓</span></div>
+        <div class="row"><span>1x Fome de Ogro</span><span>✓✓✓</span></div>
+        <div class="row tot"><span>ENTREGA</span><span>06/11</span></div>
+        <div class="big">SAIU PRA<br>ENTREGA</div>
+        <div class="ok">obrigado, SG</div>
+      </div>
+      <div class="bibphoto"><img src="img/bandeja-de-burgers.jpg" alt="Bandeja de burgers da Ogro"></div>
+      <p class="hand">O primeiro pedido de SG tem que chegar fazendo barulho.</p>
+    </div>
+  </div>
+  <div class="tape" aria-hidden="true"><div class="run">
+    <span>A Ogro chegou <i>✕</i> São Gonçalo <i>✕</i> 06.11 <i>✕</i> Só delivery <i>✕</i> Fome de Ogro <i>✕</i> A Ogro chegou <i>✕</i> São Gonçalo <i>✕</i> 06.11 <i>✕</i> Só delivery <i>✕</i> Fome de Ogro <i>✕</i>&nbsp;</span>
+    <span>A Ogro chegou <i>✕</i> São Gonçalo <i>✕</i> 06.11 <i>✕</i> Só delivery <i>✕</i> Fome de Ogro <i>✕</i> A Ogro chegou <i>✕</i> São Gonçalo <i>✕</i> 06.11 <i>✕</i> Só delivery <i>✕</i> Fome de Ogro <i>✕</i>&nbsp;</span>
+  </div></div>
+</section>
+
+<!-- 01 MÉTODO -->
+<section class="s" id="metodo">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">01</span>
+      <span class="ey">O modus operandi</span>
+      <h2>Toda inauguração ataca <span class="r">três barreiras</span></h2>
+      <p class="lead">Unidade nova não abre sozinha. O plano é desenhado para vencer, em sequência, o que trava uma marca numa praça nova.</p>
+    </div>
+
+    <div class="barr">
+      <div class="bar3 rv"><span class="bn">1</span><span class="bk">Notoriedade</span><h3>Fazer a cidade saber</h3><p>Criadores locais, conteúdo da chegada, tráfego na região e assessoria colocam a marca na conversa do bairro na semana da abertura.</p></div>
+      <div class="bar3 rv"><span class="bn">2</span><span class="bk">Experimentação</span><h3>Quebrar o 1º pedido</h3><p>Produto de presente, cupom e giveaway derrubam a barreira de experimentar uma marca pela primeira vez.</p></div>
+      <div class="bar3 rv"><span class="bn">3</span><span class="bk">Recorrência</span><h3>Virar hábito</h3><p>Brinde na sacola, base de cadastros, cashback e campanhas de recompra fazem o segundo pedido acontecer.</p></div>
+    </div>
+
+    <p class="subh rv">Já funcionou aqui</p>
+    <div class="proof">
+      <div class="pf rv">
+        <span class="pk">Øliver's · Lapa · junho/2026</span>
+        <h4>O case que virou método</h4>
+        <div class="nums">
+          <div><b>R$ 111 mil</b><span>em vendas no mês</span></div>
+          <div><b>1.087</b><span>pedidos</span></div>
+          <div><b>1.350</b><span>leads na base</span></div>
+        </div>
+        <p>Influência local, anúncios, página de captação, produto de presente no 1º pedido e base de leads trabalhada depois. No mês seguinte, mesmo sem anúncio, a loja seguiu crescendo.</p>
+      </div>
+      <div class="pf rv">
+        <span class="pk">Temakeria · Araruama · outubro/2026</span>
+        <h4>O método replicado</h4>
+        <div class="nums">
+          <div><b>10</b><span>criadores locais</span></div>
+          <div><b>3</b><span>meses de tráfego</span></div>
+          <div><b>1</b><span>produto de presente</span></div>
+        </div>
+        <p>Giveaway, landing com produto isca, cupom de 1ª compra, criativos de topo, meio e fundo, impressos e brindes na sacola, com tráfego decrescente de captação para recompra.</p>
+      </div>
+    </div>
+
+    <p class="subh rv">Implementação em 4 fases</p>
+    <div class="phase4">
+      <div class="p4 rv"><span class="pn">01</span><h4>Construção</h4><ul><li>Produto isca e cupons</li><li>Brindes e impressos</li><li>Influenciadores</li><li>Budget de mídia</li></ul></div>
+      <div class="p4 rv"><span class="pn">02</span><h4>Materiais</h4><ul><li>Criativos de social</li><li>Criativos de tráfego</li><li>Peças impressas</li><li>Gravações e edições</li></ul></div>
+      <div class="p4 rv"><span class="pn">03</span><h4>Ativações</h4><ul><li>Landing de captação</li><li>Giveaway e automação de direct</li><li>Cuponagem</li><li>Parceiros locais</li></ul></div>
+      <div class="p4 rv"><span class="pn">04</span><h4>Fechamentos</h4><ul><li>Subida das campanhas</li><li>Entrega dos materiais</li><li>Gestão dos influenciadores</li><li>Controle de leads e base</li></ul></div>
+    </div>
+
+    <p class="subh rv">As regras da casa</p>
+    <div class="rules">
+      <div class="rule rv"><b>01</b><p><strong>Data confirmada antes de estampar a peça.</strong> Nenhum material com data vai para produção sem a data cravada.</p></div>
+      <div class="rule rv"><b>02</b><p><strong>Brinde se pede cedo e se testa antes.</strong> Uma unidade aprovada antes da tiragem inteira.</p></div>
+      <div class="rule rv"><b>03</b><p><strong>Cupom da landing é exclusivo da landing.</strong> É assim que a gente mede o que a captação trouxe.</p></div>
+      <div class="rule rv"><b>04</b><p><strong>Anúncio só nos bairros que a unidade entrega.</strong> Cada real de mídia vai para quem pode pedir.</p></div>
+      <div class="rule rv"><b>05</b><p><strong>Todo cadastro vira base.</strong> Giveaway e landing alimentam o CRM da recompra.</p></div>
+      <div class="rule rv"><b>06</b><p><strong>O lançamento dura 3 meses.</strong> A abertura é o começo: captação, conversão e recompra.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 UNIDADE -->
+<section class="s light" id="unidade">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">02</span>
+      <span class="ey">A unidade</span>
+      <h2>Ogro São Gonçalo, <span class="r">só delivery</span></h2>
+    </div>
+    <div class="unit">
+      <div class="facts rv">
+        <div class="fr"><span>Operação</span><div>A partir de <strong>03/11</strong>, com treinamento da equipe</div></div>
+        <div class="fr"><span>Inauguração</span><div><strong>06/11</strong>, sexta-feira</div></div>
+        <div class="fr"><span>Formato</span><div><strong>100% delivery</strong>, sem salão e sem retirada</div></div>
+        <div class="fr"><span>Canais</span><div><strong>Cardápio próprio da Ogro</strong>, iFood e 99</div></div>
+        <div class="fr"><span>Canal próprio</span><div>Mesmo preço dos marketplaces, com <strong>promoções exclusivas</strong> e cashback</div></div>
+        <div class="fr"><span>Área</span><div>Bairros de entrega de São Gonçalo (lista a confirmar)</div></div>
+        <div class="fr"><span>Público</span><div>Adulto, que pede em casa e busca confiança, qualidade e familiaridade</div></div>
+      </div>
+      <div class="unitph rv"><img src="img/maos-na-mesa.jpg" alt="Mesa com burgers, batatas e amigos" loading="lazy"><span class="lab">Fome de Ogro em casa</span></div>
+    </div>
+    <p class="hand rv">Delivery é a força da Ogro. Em SG, a experiência inteira acontece dentro da sacola.</p>
+  </div>
+</section>
+
+<!-- 03 ALAVANCAS -->
+<section class="s" id="alavancas">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">03</span>
+      <span class="ey">O que gira junto na abertura</span>
+      <h2>As <span class="r">alavancas</span></h2>
+    </div>
+    <div class="levers">
+      <div class="lv hl rv"><span class="le">🎁</span><h3>Giveaway de inauguração</h3><p>5 combos McManis para quem comentar marcando um amigo. Sorteio em 05/11 e entrega em casa no dia 06/11, só nos bairros atendidos.</p><span class="st go">Briefing aprovado</span></div>
+      <div class="lv hl rv"><span class="le">🔗</span><h3>Landing "Presente SG"</h3><p>Cadastro com nome, WhatsApp, e-mail e bairro libera um cupom com o produto de presente no 1º pedido. 1 por CPF.</p><span class="st go">Briefing aprovado · produto isca a definir</span></div>
+      <div class="lv rv"><span class="le">🍟</span><h3>Produto isca</h3><p>O presente que puxa o 1º pedido no canal próprio: batata ou nugget no primeiro pedido, ou um "compre 1, leve 2" com pedido mínimo.</p><span class="st">A definir</span></div>
+      <div class="lv rv"><span class="le">🏷️</span><h3>Cupom de 1ª compra</h3><p>Um cupom de boas-vindas para SG no cardápio próprio, divulgado por influenciadores e anúncios.</p><span class="st">Nome e valor a definir</span></div>
+      <div class="lv rv"><span class="le">💸</span><h3>Cashback no canal próprio</h3><p>Quem pede no cardápio da Ogro ganha crédito para o próximo pedido. É a ponte do 1º para o 2º pedido.</p><span class="st">A validar no sistema</span></div>
+      <div class="lv rv"><span class="le">📱</span><h3>Influenciadores locais</h3><p>14 criadores de São Gonçalo, Niterói e Itaboraí mapeados, recebendo o pedido em casa e mostrando a experiência do delivery.</p><span class="st">Em negociação</span></div>
+      <div class="lv rv"><span class="le">🤝</span><h3>Parceiros da cidade</h3><p>Academias, barbearias, condomínios e comércios do bairro com o flyer da Ogro e um cupom próprio de parceiro.</p><span class="st">Lista em montagem</span></div>
+      <div class="lv hl rv"><span class="le">🔥</span><h3>Rodada do Ogro em SG</h3><p>Antes de qualquer cliente, o time da Ogro leva os primeiros burgers para quem faz a cidade funcionar: frentista, porteiro, entregador, quem está no ponto de ônibus. É o "Quem Prova Primeiro" do protocolo da marca, adaptado para a unidade.</p><span class="st">Proposta</span></div>
+      <div class="lv rv"><span class="le">📰</span><h3>Imprensa e Grupo ROB</h3><p>Assessoria de imprensa com a chegada da unidade e o vídeo de nova unidade no perfil do Grupo ROB.</p><span class="st go">Assessoria avisada</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 BRINDES -->
+<section class="s alt" id="brindes">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">04</span>
+      <span class="ey">O que vai dentro da sacola</span>
+      <h2>Brindes <span class="r">que viram hábito</span></h2>
+      <p class="lead">Em uma unidade só delivery, o brinde é o único contato físico com a marca. Ele precisa ficar na casa da pessoa e chamar o próximo pedido.</p>
+    </div>
+
+    <div class="gtier">
+      <div class="gt rv"><h3>Em todo pedido</h3><span>Barato, leve e com a marca à vista</span></div>
+      <div class="gl">
+        <div class="gi rv"><h4>Ímã-abridor com QR code</h4><p>Ímã de geladeira que também abre garrafa, com o QR do cardápio próprio. Fica na porta da geladeira, onde a fome bate.</p><span class="tg new">Novo</span></div>
+        <div class="gi rv"><h4>Ímã de geladeira com QR</h4><p>A versão simples do ímã, com o QR do cardápio próprio da Ogro.</p><span class="tg ok">Já usado em Araruama</span></div>
+        <div class="gi rv"><h4>Guardanapo <em>"Pode se lambuzar"</em></h4><p>Guardanapo personalizado com a cara do quadro "Já deu por hoje": comer sem culpa.</p><span class="tg new">Novo</span></div>
+        <div class="gi rv"><h4>Adesivo da Ogro</h4><p>Com cupom no verso. Vai pra garrafa, pro notebook ou pra moto do entregador.</p><span class="tg">Opção</span></div>
+        <div class="gi rv"><h4>Cartão <em>"Volta logo"</em></h4><p>Cartão com cupom de 2º pedido e prazo curto. O brinde que mais mede retorno.</p><span class="tg">Opção</span></div>
+        <div class="gi rv"><h4>Lacre de sacola de inauguração</h4><p>Adesivo que fecha a sacola com o selo "Ogro São Gonçalo · inauguração". Vira a primeira foto do pedido.</p><span class="tg new">Novo</span></div>
+      </div>
+    </div>
+
+    <div class="gtier">
+      <div class="gt rv"><h3>Nos primeiros pedidos</h3><span>Tiragem limitada, pra criar história</span></div>
+      <div class="gl">
+        <div class="gi rv"><h4>Selo numerado <em>"Primeiros de SG"</em></h4><p>Os primeiros pedidos recebem um selo numerado, de 001 em diante. Quem pegar um número baixo posta.</p><span class="tg new">Novo</span></div>
+        <div class="gi rv"><h4>Babador de Ogro</h4><p>Babador de papel personalizado, no exagero que é a cara da marca. Brinde engraçado que vira foto e story.</p><span class="tg new">Novo</span></div>
+        <div class="gi rv"><h4>Cartão <em>"Fome de campeão"</em></h4><p>Cartão personalizado com cupom para o próximo pedido.</p><span class="tg">Opção</span></div>
+      </div>
+    </div>
+
+    <div class="gtier">
+      <div class="gt rv"><h3>Para influenciadores e parceiros</h3><span>Pouca gente, muita gente vendo</span></div>
+      <div class="gl">
+        <div class="gi rv"><h4>Caixa <em>"Chegou a Ogro"</em></h4><p>O pedido do influenciador chega numa caixa especial, com babador, guardanapo, ímã e um bilhete da Ogro. Pensada para o unboxing.</p><span class="tg new">Novo</span></div>
+        <div class="gi rv"><h4>Vale <em>"Um mês de Ogro"</em></h4><p>4 pedidos para influenciadores ou parceiros especiais, no mesmo molde do professor mais fiel de outubro.</p><span class="tg ok">Já testado</span></div>
+        <div class="gi rv"><h4>Avental ou boné assinado pelo Jimmy</h4><p>Exclusivo e vira conteúdo.</p><span class="tg">Opção</span></div>
+        <div class="gi rv"><h4>Flyer dobrável de carro</h4><p>Peça para parceiros distribuírem: academia, barbearia, portaria de condomínio.</p><span class="tg ok">Já usado em Araruama</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="photo-band" aria-hidden="true">
+  <img src="img/mcmanis.jpg" alt="" loading="lazy">
+  <img src="img/sorrindo-na-mesa.jpg" alt="" loading="lazy">
+  <img src="img/texano.jpg" alt="" loading="lazy">
+</div>
+
+<!-- 05 CONTEÚDO -->
+<section class="s" id="conteudo">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">05</span>
+      <span class="ey">O protocolo da Ogro, na unidade</span>
+      <h2>Conteúdo do <span class="r">sinal ao hábito</span></h2>
+      <p class="lead">A mesma estrutura de fases do Protocolo de Lançamento da Ogro, adaptada para a chegada de uma unidade.</p>
+    </div>
+
+    <div class="cphases">
+      <div class="cp rv"><span class="cw">D-10 · 27/10</span><span class="cn">Sinal</span><p>Reel sensorial, sem rosto: chapa, chiado, a sacola fechando. Na tela final, "São Gonçalo" e a data.</p></div>
+      <div class="cp rv"><span class="cw">D-8 a D-4</span><span class="cn">Antecipação</span><p>Stories em quebra-cabeça com enquete e quiz: "Adivinha onde a Ogro vai entregar?", "Que bairro pede primeiro?".</p></div>
+      <div class="cp rv"><span class="cw">D-7 · 30/10</span><span class="cn">Giveaway no ar</span><p>Post do sorteio dos 5 combos McManis, com automação no direct levando para o cadastro.</p></div>
+      <div class="cp rv"><span class="cw">D-3 a D-1</span><span class="cn">Bastidor da semana de treino</span><p>A equipe nova em treinamento, os primeiros burgers saindo da chapa de SG, o motoboy saindo para o primeiro teste.</p></div>
+      <div class="cp hot rv"><span class="cw">D-2 · 04/11</span><span class="cn">Rodada do Ogro em SG</span><p>Gravação da rodada de rua em São Gonçalo. Os cortes publicam entre D-1 e D+3.</p></div>
+      <div class="cp hot rv"><span class="cw">D · 06/11</span><span class="cn">Inauguração</span><p>Reel hero da chegada, carrossel com cardápio e bairros, resultado do sorteio, influenciadores postando e stories do dia inteiro.</p></div>
+      <div class="cp rv"><span class="cw">D+1 a D+14</span><span class="cn">Sustentação</span><p>Repost de clientes e influenciadores, entrega dos prêmios do giveaway, cortes guardados e o primeiro relatório.</p></div>
+    </div>
+
+    <div class="crea">
+      <div class="rv"><b>5</b><span>vídeos de topo</span><p>Descoberta: a Ogro chegou na cidade</p></div>
+      <div class="rv"><b>5</b><span>vídeos de meio</span><p>Desejo: produto, exagero e bastidor</p></div>
+      <div class="rv"><b>5</b><span>vídeos de fundo</span><p>Conversão: presente e cupom do 1º pedido</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 TRÁFEGO -->
+<section class="s light" id="trafego">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">06</span>
+      <span class="ey">Mídia paga</span>
+      <h2>Funil completo, <span class="r">três meses</span></h2>
+      <p class="lead">Todas as campanhas rodam o funil inteiro. O que muda a cada mês é o foco, e o investimento diminui conforme a base de clientes amadurece.</p>
+    </div>
+    <div class="months">
+      <div class="mo rv"><span class="mk">Mês 1 · novembro</span><h3>Captação</h3><p>Fazer São Gonçalo inteira saber que a Ogro chegou e levar para o cadastro e o 1º pedido.</p><div class="bar"><i style="width:100%"></i></div></div>
+      <div class="mo rv"><span class="mk">Mês 2 · dezembro</span><h3>Conversão</h3><p>Retargeting de quem engajou ou se cadastrou e ainda não pediu.</p><div class="bar"><i style="width:70%"></i></div></div>
+      <div class="mo rv"><span class="mk">Mês 3 · janeiro</span><h3>Recompra</h3><p>Base de cadastros e público quente trabalhando o 2º, 3º e 4º pedido.</p><div class="bar"><i style="width:42%"></i></div></div>
+    </div>
+    <ul class="trules">
+      <li class="rv"><strong>Meio de funil antes da abertura</strong>, fundo de funil a partir do dia 06/11</li>
+      <li class="rv">Segmentação <strong>só nos bairros de entrega</strong> da unidade</li>
+      <li class="rv">Anúncios levam para o <strong>cardápio próprio e para a landing</strong></li>
+      <li class="rv">Relatório semanal toda <strong>sexta-feira</strong>, com os criativos que performam e os que não performam</li>
+    </ul>
+    <p class="hand rv">Investimento por mês a validar junto com o franqueado.</p>
+  </div>
+</section>
+
+<!-- 07 CRONOGRAMA -->
+<section class="s" id="cronograma">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">07</span>
+      <span class="ey">Contagem regressiva</span>
+      <h2>11 dias até a <span class="r">primeira entrega</span></h2>
+    </div>
+    <div class="course c6">
+      <div class="km rv"><i class="dot"></i><div class="kml">D-10 a D-8</div><div class="kmd">27 a 29.10</div><h4>Fechar</h4>
+        <ul><li>Produto isca e cupons</li><li>Bairros de entrega</li><li>Budget de mídia e influência</li><li>Brindes escolhidos e na gráfica</li><li>Cardápio próprio online</li></ul></div>
+      <div class="km rv"><i class="dot"></i><div class="kml">D-7 a D-4</div><div class="kmd">30.10 a 02.11</div><h4>Aquecer</h4>
+        <ul><li>Reel sinal e stories</li><li>Giveaway no ar</li><li>Landing no ar com tracking</li><li>Meio de funil rodando</li><li>Roteiro para influenciadores</li></ul></div>
+      <div class="km rv"><i class="dot"></i><div class="kml">D-3 a D-1</div><div class="kmd">03 a 05.11</div><h4>Treinar</h4>
+        <ul><li>Operação e treinamento</li><li>Pedidos-teste e bastidor</li><li>Rodada do Ogro em SG</li><li>Brindes na unidade</li><li>Sorteio em 05/11</li></ul></div>
+      <div class="km finish rv"><i class="dot"></i><div class="kml">Dia D</div><div class="kmd">06.11</div><h4>Abrir</h4>
+        <ul><li>Cupons ativos</li><li>Fundo de funil ligado</li><li>Influenciadores postando</li><li>Prêmios do giveaway entregues</li><li>Cobertura do dia</li></ul></div>
+      <div class="km rv"><i class="dot"></i><div class="kml">D+1 a D+14</div><div class="kmd">07 a 20.11</div><h4>Sustentar</h4>
+        <ul><li>Repost e conteúdo de clientes</li><li>Avaliações acompanhadas</li><li>1º relatório semanal</li></ul></div>
+      <div class="km rv"><i class="dot"></i><div class="kml">Meses 2 e 3</div><div class="kmd">dez e jan</div><h4>Fidelizar</h4>
+        <ul><li>Conversão e recompra</li><li>CRM com a base</li><li>Datas do calendário</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 QUEM FAZ -->
+<section class="s alt" id="time">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">08</span>
+      <span class="ey">Cada um no seu</span>
+      <h2>Quem <span class="r">faz o quê</span></h2>
+    </div>
+    <div class="team">
+      <div class="tm rv"><span class="tw2">Seven7 · marca</span><h4>Plano e aprovação</h4><p>Estratégia, conceito, peças e aprovação final de tudo que sai.</p></div>
+      <div class="tm rv"><span class="tw2">Seven7 · comunicação</span><h4>Briefings</h4><p>Giveaway, landing, criativos, impressos e roteiros de influenciadores.</p></div>
+      <div class="tm rv"><span class="tw2">Seven7 · design</span><h4>Peças</h4><p>Criativos, impressos, brindes e artes do giveaway.</p></div>
+      <div class="tm rv"><span class="tw2">Seven7 · social</span><h4>Conteúdo e influência</h4><p>Calendário, gravações, stories e gestão dos influenciadores.</p></div>
+      <div class="tm rv"><span class="tw2">Seven7 · tráfego</span><h4>Mídia paga</h4><p>Campanhas, landing com tracking e relatório semanal.</p></div>
+      <div class="tm rv"><span class="tw2">Ogro · Grupo ROB</span><h4>Cardápio, cupons e operação</h4><p>Produto isca, cupons e cashback no sistema, bairros de entrega, franqueado e parceiros da cidade.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 DECISÕES -->
+<section class="s light" id="decisoes">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="n">09</span>
+      <span class="ey">Para destravar esta semana</span>
+      <h2>O que precisa <span class="r">sair até 29/10</span></h2>
+    </div>
+    <div class="dec">
+      <div class="d rv"><span class="dn">1</span><p>Qual é o <strong>produto isca</strong> da landing?</p></div>
+      <div class="d rv"><span class="dn">2</span><p>Quais são os <strong>bairros de entrega</strong> de SG?</p></div>
+      <div class="d rv"><span class="dn">3</span><p>Nome e valor dos <strong>cupons</strong>: 1ª compra, landing e parceiros</p></div>
+      <div class="d rv"><span class="dn">4</span><p><strong>Budget</strong> de tráfego e de influenciadores</p></div>
+      <div class="d rv"><span class="dn">5</span><p>Quais <strong>brindes</strong> entram</p></div>
+      <div class="d rv"><span class="dn">6</span><p>Confirmação do <strong>prêmio do giveaway</strong>: 5 combos McManis</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIM -->
+<section class="end">
+  <img class="bg" src="img/maos-na-mesa.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <h2>São Gonçalo,<br>a fome agora<br><span class="r">tem nome.</span></h2>
+    <p class="hand">Primeira entrega: 06.11</p>
+    <img class="logo" src="img/ogro-negativo.svg" alt="Ogro Steaks">
+  </div>
+</section>
+
+<footer><div class="wrap">Seven7 para Ogro Steaks · Plano de inauguração · São Gonçalo · novembro 2026</div></footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
